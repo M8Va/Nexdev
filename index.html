@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>NexDev</title>
+  <meta name="description" content="Welcome To NexDev">
+  <meta property="og:title" content="NexDev">
+  <meta property="og:description" content="Welcome NexDev">
+  <meta property="og:image" content="9.png">
+  <meta name="twitter:title" content="NexDEv">
+  <meta name="twitter:description" content="Welcome 16" <meta name="twitter:card" content="summary">
+  <link rel="icon" type="image/png" href="logo.png">
+  <meta name="theme-color" content="#287eba" />
+
+  <link href="built.css" rel="stylesheet" />
+  <link href="custom.css" rel="stylesheet" />
+
+  <style id="theme-styles">
+    :root {
+      --cl-accent: 0, 51, 102;
+      --cl-background: 6, 6, 12;
+      --cl-t-primary: 255, 255, 255;
+      --cl-t-accent: 255, 255, 255;
+    }
+
+    body {
+      font-family: 'Poller One', sans-serif;
+    }
+  </style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poller+One:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" id="theme-font">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet"
+    integrity="sha256-5uKiXEwbaQh9cgd2/5Vp6WmMnsUr3VZZw0a8rKnOKNU=" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/choices.js@10.2.0/public/assets/styles/choices.min.css" rel="stylesheet"
+    integrity="sha256-gS3HxgWFFFqEo0wQoALebu5XlWdYr3gqd4/Tk5wt8Ig=" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.3.3/src/lite-yt-embed.css" rel="stylesheet"
+    integrity="sha256-qwd4FE0YEnXtN1D9SlLRzgZ35aJTclA5jg1poUQA3dE=" crossorigin="anonymous" />
+
+
+
+
+
+
+
+</head>
+
+<body style="background-color: rgb(6,6,12);">
+
+
+  <div id="particles-js" class="fixed inset-0 z-0 size-full"></div>
+
+
+
+  <div id="app" x-data="app">
+    <div class="announcement component " data-component-id="announcement">
+
+      <div x-data="{
+        duration: 3000,
+        activeIndex: 0,
+        interval: null,
+        startInterval() {
+          this.interval = setInterval(() => {
+            this.activeIndex = (this.activeIndex + 1) % 3;
+          }, this.duration);
+        }
+      }" x-init="startInterval" class="overflow-hidden h-5">
+
+        <p x-show="activeIndex === 0" class="font-medium text-center animate-announcement-fade truncate line-clamp-1">
+          <a href="#" target="" class="truncate line-clamp-1">
+            <span class="truncate"> 🔥 Best One In Tunisia</span>
+            <svg class="ml-2 size-4 inline-block align-[-0.125rem] hidden" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20" fill="currentColor" style="max-width: 16px;">
+              <path fill-rule="evenodd"
+                d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5z"
+                clip-rule="evenodd"></path>
+              <path fill-rule="evenodd"
+                d="M6.194 12.753a.75.75 0 001.06.053L16.5 4.44v2.81a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.553l-9.056 8.194a.75.75 0 00-.053 1.06z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </a>
+        </p>
+
+
+        <p x-show="activeIndex === 1" x-cloak
+          class="font-medium text-center animate-announcement-fade truncate line-clamp-1">
+          <span class="truncate">🔥 Best One In Tunisia</span>
+          <svg class="ml-2 size-4 inline-block align-[-0.125rem] hidden" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20" fill="currentColor" style="max-width: 16px;">
+            <path fill-rule="evenodd"
+              d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5z"
+              clip-rule="evenodd"></path>
+            <path fill-rule="evenodd"
+              d="M6.194 12.753a.75.75 0 001.06.053L16.5 4.44v2.81a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.553l-9.056 8.194a.75.75 0 00-.053 1.06z"
+              clip-rule="evenodd"></path>
+          </svg>
+          </a>
+        </p>
+
+        <p x-show="activeIndex === 2" x-cloak
+          class="font-medium text-center animate-announcement-fade truncate line-clamp-1">
+          <a href="#" target="_blank" class="truncate line-clamp-1">
+            <span class="truncate">🔥Best One In Tunisia</span>
+            <svg class=" " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+              style="max-width: 16px;">
+              <path fill-rule="evenodd"
+                d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5z"
+                clip-rule="evenodd"></path>
+              <path fill-rule="evenodd"
+                d="M6.194 12.753a.75.75 0 001.06.053L16.5 4.44v2.81a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.553l-9.056 8.194a.75.75 0 00-.053 1.06z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </a>
+        </p>
+
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col justify-between max-w-[85rem] min-h-screen mx-auto p-4 relative md:p-6 lg:p-8">
+    <div>
+      <nav class="component" data-component-id="navbar" x-data="{
+    isCollapsed: true,
+    menuHeight: 0
+  }">
+        <div class="picatshuu">
+
+
+
+
+
+        </div>
+        <div class="bg-card/75 border border-white/5">
+          <div class="flex items-center justify-between flex-wrap w-full">
+            <div class="flex items-center p-4 md:p-6">
+
+              <a href="index.html" class="flex items-center justify-center gap-4 md:justify-start">
+
+                <div class="spiner" align="center">
+                  <img src="logo.png" alt="">
+
+                </div>
+
+
+
+              </a>
+              <a href="https://discord.gg/aKYSNDAEXY" class="dis">
+
+                <i class="fa-brands fa-discord"></i>
+              </a>
+              <a href="https://www.instagram.com/a7med__.exe/" class="insta">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+
+
+
+
+
+            </div>
+
+
+
+            <div x-ref="menu"
+              class="w-full overflow-hidden transition-all duration-150 ease-in-out md:w-auto md:!h-auto"
+              x-bind:style="{ height: isCollapsed ? '0px' : menuHeight + 'px' }" x-cloak>
+              <div class="flex flex-col gap-2 p-2 md:flex-row md:justify-between md:items-center md:gap-4 md:p-6">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="components">
+
+
+        <section id="hero" class="component" data-component-id="hero">
+          <div class="relative flex justify-center items-center py-24 ">
+            <div
+              class="container relative flex gap-12 items-center px-4 flex-col md:flex-row-reverse md:justify-between">
+              <div class="flex flex-col gap-4 max-w-md text-right">
+
+                <h1 class="text-3xl font-bold text-t-primary mb-3 md:text-4xl lg:text-5xl" data-i18n="welcome">
+                  Accueillir A<span class="text-accent-500">NexDev</span>!
+                </h1>
+
+
+                <p class="text-base text-t-primary/75 mb-3 md:text-lg" data-i18n="welcome_text">
+                  Bienvenue sur le meilleur site tunisien de NexDev, une société spécialisée dans le développement de
+                  sites Web pour les entreprises, les startups et les particuliers.
+                </p>
+                <p>
+
+                </p>
+
+                <div class="mb-4" x-data="{
+    searchTerm: '',
+    isModalOpen: false,
+    openModal() {
+      this.isModalOpen = true;
+      document.body.style.overflow = 'hidden';
+
+      setTimeout(() => {
+        this.$refs.searchInput.focus();
+      }, 100);
+    },
+    closeModal() {
+      this.isModalOpen = false;
+      document.body.style.overflow = 'auto';
+    }
+  }">
+
+
+                  <div x-show="isModalOpen" class="fixed inset-0 z-50 overflow-y-auto" aria-labelledby="modal-title"
+                    role="dialog" aria-modal="true">
+                    <div class="flex items-center justify-center min-h-screen px-4 text-center">
+                      <div x-cloak @click="closeModal" x-show="isModalOpen"
+                        x-transition:enter="transition ease-out duration-300 transform"
+                        x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
+                        x-transition:leave="transition ease-in duration-200 transform"
+                        x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0"
+                        class="fixed inset-0 transition-opacity bg-black/75" aria-hidden="true"></div>
+
+                      <div x-cloak x-show="isModalOpen" x-transition:enter="transition ease-out duration-300 transform"
+                        x-transition:enter-start="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                        x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100"
+                        x-transition:leave="transition ease-in duration-200 transform"
+                        x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
+                        x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                        class="inline-block w-full max-w-[76rem] transition-all transform">
+                        <div
+                          class="overflow-hidden text-t-primary text-left border border-white/5 bg-background p-4 md:p-6">
+                          <div class="flex items-center justify-between gap-4 mb-4 sm:mb-6">
+
+
+                            <button @click="closeModal"
+                              class="flex items-center justify-center size-[2.875rem] bg-white/[0.025] border border-white/5 text-t-primary/75 transition-colors ease-in-out duration-150 focus:outline-none hover:text-accent-500 hover:bg-accent-500/10">
+                              <svg class="size-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                              </svg>
+                            </button>
+                          </div>
+
+                          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4"
+                            x-ref="productsContainer">
+
+
+
+
+
+
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+              </div>
+
+              <div class="spiner1">
+                <img src="logo.png" alt="" class="max-w-full" />
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <section id="products" class="component" data-component-id="products" x-data="{
+    searchTerm: '',
+    openGroupModalId: null,
+    openGroupModal(id) {
+      this.openGroupModalId = id;
+      document.body.style.overflow = 'hidden';
+    },
+    closeGroupModal() {
+      this.openGroupModalId = null;
+      document.body.style.overflow = 'auto';
+    }
+  }">
+
+
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div x-show="searchTerm == '' || 'CUSTUM WEB SITE'.includes(searchTerm.toLowerCase())">
+              <a @click="" class="block h-full bg-card/75 border border-white/5 text-t-primary group"
+                href="Cleaner.html">
+                <div class="h-full transform transition-colors duration-150 ease-in-out group-hover:bg-white/[0.025]">
+                  <div class="text-center px-4 py-2 border-b border-white/5">
+                    <h3 class="text-lg font-bold truncate">
+
+                      NexDev
+
+                    </h3>
+                  </div>
+                  <div class="relative overflow-hidden p-2 mb-4 border-b border-white/5">
+                    <img class="aspect-video w-full object-scale-down" loading="lazy" src="story.png" />
+                  </div>
+                  <div class="text-left px-4 pb-4">
+                    <div class="flex items-center justify-between gap-2 truncate mb-4">
+                      <p class="text-base font-semibold text-t-primary/50 truncate">
+                        <span class="text-accent-500">
+
+
+
+                          0 TND
+
+
+
+                        </span>
+                        <span class="text-xs line-through">25.00 TND</span>
+                      </p>
+                      <p class="text-base text-t-primary/50">
+                        <span class="inline-flex items-center gap-1">
+                          <svg class="text-accent-500 size-4" fill="currentColor" viewbox="0 0 256 256"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M248,128a56,56,0,0,1-95.6,39.6l-.33-.35L92.12,99.55a40,40,0,1,0,0,56.9l8.52-9.62a8,8,0,1,1,12,10.61l-8.69,9.81-.33.35a56,56,0,1,1,0-79.2l.33.35,59.95,67.7a40,40,0,1,0,0-56.9l-8.52-9.62a8,8,0,1,1-12-10.61l8.69-9.81.33-.35A56,56,0,0,1,248,128Z">
+                            </path>
+                          </svg>
+
+                          in stock
+
+                        </span>
+                      </p>
+                    </div>
+                    <div
+                      class="flex items-center justify-center gap-2 text-accent-500 text-center font-semibold border border-accent-500 px-4 py-1 transition-colors duration-150 ease-in-out hover:bg-accent-500 hover:text-white">
+
+                      View Details
+
+                      <svg class="size-4" viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m18 6l-1.43 1.393L24.15 15H4v2h20.15l-7.58 7.573L18 26l10-10z" fill="currentColor">
+                        </path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+           
+          </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  </div>
+  <footer class="mt-6 bg-card/90 border border-white/5 lg:mt-8">
+    <div class="max-w-[85rem] mx-auto text-t-primary">
+
+
+      <div class="flex flex-col flex-wrap gap-4 px-4 py-4 bg-card/25 sm:flex-row sm:items-center sm:justify-between">
+        <p class="text-sm text-t-primary/80">
+
+          <span data-i18n="copyright">Copyright &copy; NexDevStuidio 2025</span>
+
+        </p>
+        <div class="flex gap-3">
+
+
+
+          </a>
+
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  </div>
+  </div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.3/dist/cdn.min.js"
+    integrity="sha256-aJ9ROXjRHWn00zeU9ylsmlhqLlXeebtEfN28P0dPnwc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
+    integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/choices.js@10.2.0/public/assets/scripts/choices.min.js"
+    integrity="sha256-P+JgcxEeZtxwYS1+TAAuusKFM646SB8Oodk0TYu9zuo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.3.3/src/lite-yt-embed.js"
+    integrity="sha256-t8Thbv2D6x0AC5rMk+Ydz589Zq4lp8ZC4iVfNNdxs5U=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"
+    integrity="sha256-icjghcPaibMf1jv4gQIGi5MeWNHem2SispcorCiCfSg=" crossorigin="anonymous"></script>
+  <script src=" " crossorigin="anonymous"></script>
+  <script>
+    particlesJS({
+      "particles": {
+        "number": {
+          "value": 50,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#26115c"
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": false,
+          "anim": {
+            "enable": false,
+            "speed": 1,
+            "opacity_min": 0.1,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 3,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 40,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 1,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": false,
+            "mode": "repulse"
+          },
+          "onclick": {
+            "enable": false,
+            "mode": "push"
+          },
+          "resize": true
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
+
+
+  <script src="snow.js"></script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

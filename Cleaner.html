@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>NexDev</title>
+    <meta name="description" content="Welcome To NexDev">
+    <meta property="og:title" content="NexDev">
+    <meta property="og:description" content="Welcome NexDev">
+    <meta property="og:image" content="9.png">
+    <meta name="twitter:title" content="NexDEv">
+    <meta name="twitter:description" content="Welcome 16" <meta name="twitter:card" content="summary">
+    <link rel="icon" type="image/png" href="logo.png">
+    <meta name="theme-color" content="#287eba" />
+
+    <link href="built.css" rel="stylesheet" />
+    <link href="custom.css" rel="stylesheet" />
+    <style id="theme-styles">
+        :root {
+
+            --cl-accent: 206, 25, 25;
+
+            --cl-background: 6, 6, 12;
+
+            --cl-card: 11, 11, 17;
+
+            --cl-t-primary: 255, 255, 255;
+
+            --cl-t-accent: 255, 255, 255;
+
+        }
+
+
+
+        body {
+
+            font-family: 'Poller One', sans-serif;
+
+        }
+    </style>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Poller+One:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" id="theme-font">
+    <link href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link crossorigin="anonymous" href="../cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+        integrity="sha256-5uKiXEwbaQh9cgd2/5Vp6WmMnsUr3VZZw0a8rKnOKNU=" rel="stylesheet">
+    <link crossorigin="anonymous" href="../cdn.jsdelivr.net/npm/choices.js@10.2.0/public/assets/styles/choices.min.css"
+        integrity="sha256-gS3HxgWFFFqEo0wQoALebu5XlWdYr3gqd4/Tk5wt8Ig=" rel="stylesheet">
+    <link crossorigin="anonymous" href="../cdn.jsdelivr.net/npm/lite-youtube-embed@0.3.3/src/lite-yt-embed.css"
+        integrity="sha256-qwd4FE0YEnXtN1D9SlLRzgZ35aJTclA5jg1poUQA3dE=" rel="stylesheet" />
+    </link>
+    </link>
+    </link>
+    </link>
+    </meta>
+</head>
+
+<body style="background-color: rgb(6,6,12);">
+    <div class="fixed inset-0 z-0 size-full" id="particles-js"></div>
+
+
+
+    <div id="app" x-data="app">
+        <div class="announcement component " data-component-id="announcement">
+
+            <div x-data="{
+        duration: 3000,
+        activeIndex: 0,
+        interval: null,
+        startInterval() {
+          this.interval = setInterval(() => {
+            this.activeIndex = (this.activeIndex + 1) % 3;
+          }, this.duration);
+        }
+      }" x-init="startInterval" class="overflow-hidden h-5">
+
+                <p x-show="activeIndex === 0"
+                    class="font-medium text-center animate-announcement-fade truncate line-clamp-1">
+                    <a href="#" target="" class="truncate line-clamp-1">
+                        <span class="truncate"> 🔥 Best One In Tunisia</span>
+                        <svg class="ml-2 size-4 inline-block align-[-0.125rem] hidden"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            style="max-width: 16px;">
+                            <path fill-rule="evenodd"
+                                d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5z"
+                                clip-rule="evenodd"></path>
+                            <path fill-rule="evenodd"
+                                d="M6.194 12.753a.75.75 0 001.06.053L16.5 4.44v2.81a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.553l-9.056 8.194a.75.75 0 00-.053 1.06z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </p>
+
+
+                <p x-show="activeIndex === 1" x-cloak
+                    class="font-medium text-center animate-announcement-fade truncate line-clamp-1">
+                    <span class="truncate">🔥 Best One In Tunisia</span>
+                    <svg class="ml-2 size-4 inline-block align-[-0.125rem] hidden" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20" fill="currentColor" style="max-width: 16px;">
+                        <path fill-rule="evenodd"
+                            d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5z"
+                            clip-rule="evenodd"></path>
+                        <path fill-rule="evenodd"
+                            d="M6.194 12.753a.75.75 0 001.06.053L16.5 4.44v2.81a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.553l-9.056 8.194a.75.75 0 00-.053 1.06z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    </a>
+                </p>
+
+                <p x-show="activeIndex === 2" x-cloak
+                    class="font-medium text-center animate-announcement-fade truncate line-clamp-1">
+                    <a href="#" target="_blank" class="truncate line-clamp-1">
+                        <span class="truncate">🔥Best One In Tunisia</span>
+                        <svg class=" " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            style="max-width: 16px;">
+                            <path fill-rule="evenodd"
+                                d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5z"
+                                clip-rule="evenodd"></path>
+                            <path fill-rule="evenodd"
+                                d="M6.194 12.753a.75.75 0 001.06.053L16.5 4.44v2.81a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.553l-9.056 8.194a.75.75 0 00-.053 1.06z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col justify-between max-w-[85rem] min-h-screen mx-auto p-4 relative md:p-6 lg:p-8">
+        <div>
+            <nav class="component" data-component-id="navbar" x-data="{
+    isCollapsed: true,
+    menuHeight: 0
+  }">
+                <div class="bg-card/75 border border-white/5">
+                    <div class="flex items-center justify-between flex-wrap w-full">
+                        <div class="flex items-center p-4 md:p-6">
+
+                            <a href="index.html" class="flex items-center justify-center gap-4 md:justify-start">
+
+                                <div class="spiner" align="center">
+                                    <img src="logo.png" alt="">
+
+                                </div>
+
+
+
+                            </a>
+                            <a href="https://discord.gg/aKYSNDAEXY" class="dis">
+
+                                <i class="fa-brands fa-discord"></i>
+                            </a>
+                            <a href="https://www.instagram.com/a7med__.exe/" class="insta">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+
+
+
+
+
+                        </div>
+                        <div class="flex items-center gap-4 mr-4">
+                            <button
+                                class="inline-flex items-center justify-center size-10 bg-card border border-white/5 text-t-primary/75 text-sm transition-all ease-in-out duration-150 md:hidden hover:bg-accent-500/10 hover:text-accent-500 focus:outline-none"
+                                type="button"
+                                x-on:click="isCollapsed = !isCollapsed; $nextTick(() =&gt; menuHeight = isCollapsed ? 0 : $refs.menu.scrollHeight)">
+                                <svg aria-hidden="true" class="size-4" fill="none" viewbox="0 0 17 14"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1h15M1 7h15M1 13h15" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="w-full overflow-hidden transition-all duration-150 ease-in-out md:w-auto md:!h-auto"
+                            x-bind:style="{ height: isCollapsed ? '0px' : menuHeight + 'px' }" x-cloak="" x-ref="menu">
+                            <div
+                                class="flex flex-col gap-2 p-2 md:flex-row md:justify-between md:items-center md:gap-4 md:p-6">
+                                <a class="px-4 py-2 whitespace-nowrap text-base font-medium text-t-primary/80 hover:text-white"
+                                    href="index.html" target="">
+
+                                    MAIN PAGE
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="components">
+                <section class="component" data-component-id="product-page" id="product-page">
+                    <div class="py-6 lg:py-8">
+                        <div class="flex flex-col gap-4 lg:flex-row lg:gap-8">
+                            <div class="lg:w-3/5">
+                                <div class="bg-card">
+                                    <div class="bg-background/35 border border-white/5 text-t-primary p-4 md:p-6">
+                                        <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+                                            <h1
+                                                class="flex-1 text-t-primary text-lg font-bold truncate md:text-xl lg:text-2xl">
+
+                                                NexDev Cleaner
+
+                                            </h1>
+                                            <div class="flex items-center gap-3 status md:gap-3.5" data-color="#2ecc71"
+                                                data-label="متوفر">
+                                                <div class="relative size-4 rounded-full md:size-5"
+                                                    style="background-color: #2ecc71">
+                                                    <div class="pulsating" style="background-color: #2ecc71"></div>
+                                                </div>
+                                                <span class="text-sm font-bold md:text-base" style="color: #2ecc71">
+
+                                                    Available
+
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="bg-card/75 border-b border-x border-white/5 text-t-primary aspect-video">
+                                        <div class="splide main">
+                                            <div class="splide__track">
+                                                <ul class="splide__list">
+                                                    <li class="splide__slide">
+                                                        <img class="size-full object-scale-down" src="story.png"
+                                                            style="" />
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div x-data="{ activeTab: 'description' }">
+                                        <div
+                                            class="bg-card/75 border-b border-x border-white/5 text-t-primary p-4 md:p-6">
+                                            <div>
+                                                <template x-if="activeTab == 'description'">
+                                                    <div class="text-t-primary editor">
+                                                        <p class="e-paragraph"><br /></p>
+                                                    </div>
+                                                </template>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lg:w-2/5">
+                                <div x-data="productForm">
+                                    <div class="bg-card">
+                                        <div class="bg-background/35 border border-white/5 text-t-primary p-4 md:p-6">
+                                            <div class="flex justify-between items-center">
+                                                <div class="text-3xl text-t-primary">
+                                                    <template x-if="activeVariant in product.variants">
+                                                        <span>
+                                                            <span x-text="formatPrice(totalPrice)"></span>
+                                                        </span>
+                                                    </template>
+
+                                                     
+
+                                                </div>
+                                                <div>
+                                                    <div x-show="activeVariant in product.variants">
+                                                        <span class="text-t-primary"
+                                                            x-show="product.variants[activeVariant].stock &gt; 0 || product.variants[activeVariant].stock === -1">
+                                                            <span class="inline-flex items-center gap-1"
+                                                                x-show="product.variants[activeVariant].stock === -1">
+                                                                <svg class="text-accent-500 size-5" fill="currentColor"
+                                                                    viewbox="0 0 256 256"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M248,128a56,56,0,0,1-95.6,39.6l-.33-.35L92.12,99.55a40,40,0,1,0,0,56.9l8.52-9.62a8,8,0,1,1,12,10.61l-8.69,9.81-.33.35a56,56,0,1,1,0-79.2l.33.35,59.95,67.7a40,40,0,1,0,0-56.9l-8.52,9.62a8,8,0,1,1-12-10.61l8.69-9.81.33-.35A56,56,0,0,1,248,128Z">
+                                                                    </path>
+                                                                </svg>
+
+
+
+                                                            </span>
+                                                            <span
+                                                                x-show="product.variants[activeVariant].stock &gt; 0 &amp;&amp; !product.hide_stock_count"
+                                                                x-text="product.variants[activeVariant].stock + ' In Stock'"></span>
+                                                            <span
+                                                                x-show="product.variants[activeVariant].stock &gt; 0 &amp;&amp; product.hide_stock_count">In
+                                                                Stock</span>
+                                                        </span>
+                                                        <span class="text-t-primary" x-cloak=""
+                                                            x-show="product.variants[activeVariant].stock === 0">
+
+                                                            Out of Stock
+
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <form @submit.prevent="buyNow">
+                                            <div
+                                                class="bg-card/75 border-b border-x border-white/5 text-t-primary p-4 md:p-6">
+                                                <div class="mb-4 pb-4 border-b border-y-white/5">
+                                                    <label class="block mb-2" for="quantity">NexDev</label>
+                                                    <h6>Git the best Performance in your oc</h6>
+                                                    <div class="transition-opacity" x-show="availableVolumeDiscount"
+                                                        x-transition:enter="transition ease-out duration-300 transform"
+                                                        x-transition:enter-end="opacity-100"
+                                                        x-transition:enter-start="opacity-0"
+                                                        x-transition:leave="transition ease-in duration-200 transform"
+                                                        x-transition:leave-end="opacity-0"
+                                                        x-transition:leave-start="opacity-100">
+
+                                                    </div>
+                                                </div>
+                                                <div class="transition-opacity" x-cloak="" x-show="!altchaPayload"
+                                                    x-transition:enter="transition ease-out duration-300 transform"
+                                                    x-transition:enter-end="opacity-100"
+                                                    x-transition:enter-start="opacity-0"
+                                                    x-transition:leave="transition ease-in duration-200 transform"
+                                                    x-transition:leave-end="opacity-0"
+                                                    x-transition:leave-start="opacity-100">
+                                                    <altcha-widget auto="onload"
+                                                        challengejson='{"algorithm":"SHA-256","challenge":"e405015a1ffdd82ef93a18eea8e1d7d77648ca753ff0aa9ff4681d2d2cb1e5ff","maxnumber":1000000,"salt":"a62e56852f63f56adf563361","signature":"e66c6588f62a13f6c396b318388d76e9265c5ba221cce1d1426c84aaf1685fdd"}'
+                                                        hidefooter="true" hidelogo="true"
+                                                        x-ref="altcha"></altcha-widget>
+                                                </div>
+                                                <div class="transition-opacity" x-cloak="" x-show="buyNowError"
+                                                    x-transition:enter="transition ease-out duration-300 transform"
+                                                    x-transition:enter-end="opacity-100"
+                                                    x-transition:enter-start="opacity-0"
+                                                    x-transition:leave="transition ease-in duration-200 transform"
+                                                    x-transition:leave-end="opacity-0"
+                                                    x-transition:leave-start="opacity-100">
+                                                    <div
+                                                        class="bg-red-500 border-2 border-white/5 text-t-primary p-4 rounded-lg mt-4">
+                                                        <span x-text="buyNowError"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="flex flex-col gap-4 mt-4 lg:flex-row">
+                                                    <a class="px-6 py-2 flex-1 flex justify-center items-center gap-4 text-base font-semibold border border-[#287eba] text-white bg-[#287eba] transition-colors ease-in-out duration-150 hover:bg-[#22669e] disabled:opacity-50 disabled:pointer-events-none"
+                                                        href="https://www.mediafire.com/file/asa1wyeqgtrieos/custum_curve.rar/file">
+                                                        <span>Git It Now</span>
+                                                        <i class="fa fa-angles-right"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                        <script type="module">
+
+                                            import altcha from 'https://cdn.jsdelivr.net/npm/altcha@1.2.0/+esm'
+
+                                        </script>
+                                        <div
+                                            class="flex flex-col gap-3 sm:gap-1 bg-card/75 border-b border-x border-white/5 text-sm text-t-primary/50 p-4 md:p-6">
+                                            <div class="flex items-center gap-4 sm:gap-2">
+                                                <i class=""></i>
+                                                <p>
+                                                    <span class="font-semibold"></span>
+                                                </p>
+                                            </div>
+                                            <div class="flex items-center gap-4 sm:gap-2">
+                                                <i class=""></i>
+                                                <p>
+                                                    <span class="font-semibold"></span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <link crossorigin="anonymous" href="../cdn.jsdelivr.net/npm/flag-icons@7.3.2/css/flag-icons.min.css"
+                    integrity="sha256-tyPeBlnZW2qWbAF1hQiCt9qo6SOgOSymvJBum+FrrwI=" rel="stylesheet" />
+                <div class="relative" x-cloak="" x-data="salesNotifications">
+                    <div class="fixed z-50 bottom-4 left-4 right-4 sm:right-auto" x-show="show"
+                        x-transition:enter="transition-transform ease-in-out duration-500"
+                        x-transition:enter-end="transform translate-y-0"
+                        x-transition:enter-start="transform translate-y-full"
+                        x-transition:leave="transition-transform ease-in duration-500"
+                        x-transition:leave-end="transform translate-y-full"
+                        x-transition:leave-start="transform translate-y-0">
+                        <template x-if="order">
+                            <div class="flex items-center gap-3 p-1 border border-white/5 bg-card shadow-2xl group">
+                                <div class="relative">
+                                    <img alt="" class="size-[3.75rem] object-cover sm:size-[4.5rem]" src="logo.png" />
+                                </div>
+                                <div class="truncate pr-2">
+  
+                                    <p class="text-sm text-t-primary font-medium truncate sm:text-base">
+
+                                        NexDev Cleaner
+
+                                    </p>
+                                    <p class="text-xs text-t-primary/75 font-light truncate sm:text-sm">
+                                        <span x-text="getTimeAgo(order.completed_at)"></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <footer class="mt-6 bg-card/90 border border-white/5 lg:mt-8">
+            <div class="max-w-[85rem] mx-auto text-t-primary">
+
+
+                <div
+                    class="flex flex-col flex-wrap gap-4 px-4 py-4 bg-card/25 sm:flex-row sm:items-center sm:justify-between">
+                    <p class="text-sm text-t-primary/80">
+
+                        <span data-i18n="copyright">Copyright &copy; NexDevStuidio 2025</span>
+
+                    </p>
+                    <div class="flex gap-3">
+
+
+
+                        </a>
+
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </div>
+    <script>
+
+        document.addEventListener('alpine:init', () => {
+
+            Alpine.data('app', () => ({
+
+                appCart: {
+
+                    items: [],
+
+                    updateLocalStorage: function () {
+
+                        localStorage.setItem('cart', JSON.stringify(this.items));
+
+                    },
+
+                    set: function (items) {
+
+                        this.items = items;
+
+
+
+                        this.updateLocalStorage();
+
+                    },
+
+                    add: function (productId, variantId, quantity) {
+
+                        const item = this.items.find((item) => item.variantId === variantId);
+
+
+
+                        if (item) {
+
+                            item.quantity += quantity;
+
+                        } else {
+
+                            this.items.push({ productId, variantId, quantity });
+
+                        }
+
+
+
+                        this.updateLocalStorage();
+
+                    },
+
+                    remove: function (variantId) {
+
+                        this.items = this.items.filter((item) => item.variantId !== variantId);
+
+
+
+                        this.updateLocalStorage();
+
+                    },
+
+                    editQuantity: function (variantId, quantity) {
+
+                        const item = this.items.find((item) => item.variantId === variantId);
+
+                        item.quantity = quantity;
+
+
+
+                        this.updateLocalStorage();
+
+                    },
+
+                    get countWithQuantities() {
+
+                        return this.items.reduce((acc, item) => acc + item.quantity, 0);
+
+                    },
+
+                    init: function () {
+
+                        if (localStorage.getItem('cart')) {
+
+                            try {
+
+                                this.items = JSON.parse(localStorage.getItem('cart'));
+
+                                if (!Array.isArray(this.items)) {
+
+                                    this.items = [];
+
+                                }
+
+                            } catch (error) {
+
+                                console.error('Error parsing cart from local storage', error);
+
+                                this.items = [];
+
+                            }
+
+                        }
+
+                    }
+
+                },
+
+
+
+                init: function () {
+
+                    this.appCart.init();
+
+                }
+
+            }));
+
+        });
+
+    </script>
+    <script crossorigin="anonymous" integrity="sha256-aJ9ROXjRHWn00zeU9ylsmlhqLlXeebtEfN28P0dPnwc="
+        src="../cdn.jsdelivr.net/npm/alpinejs@3.14.3/dist/cdn.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw="
+        src="../cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-P+JgcxEeZtxwYS1+TAAuusKFM646SB8Oodk0TYu9zuo="
+        src="../cdn.jsdelivr.net/npm/choices.js@10.2.0/public/assets/scripts/choices.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-t8Thbv2D6x0AC5rMk+Ydz589Zq4lp8ZC4iVfNNdxs5U="
+        src="../cdn.jsdelivr.net/npm/lite-youtube-embed@0.3.3/src/lite-yt-embed.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-icjghcPaibMf1jv4gQIGi5MeWNHem2SispcorCiCfSg="
+        src="../cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
+    <script crossorigin="anonymous" src="/assets/101398/script.js?v=1742125888065"></script>
+    <script>
+
+        particlesJS({
+
+            "particles": {
+
+                "number": {
+
+                    "value": 50,
+
+                    "density": {
+
+                        "enable": true,
+
+                        "value_area": 800
+
+                    }
+
+                },
+
+                "color": {
+
+                    "value": "#287eba"
+
+                },
+
+                "opacity": {
+
+                    "value": 0.5,
+
+                    "random": false,
+
+                    "anim": {
+
+                        "enable": false,
+
+                        "speed": 1,
+
+                        "opacity_min": 0.1,
+
+                        "sync": false
+
+                    }
+
+                },
+
+                "size": {
+
+                    "value": 3,
+
+                    "random": true,
+
+                    "anim": {
+
+                        "enable": false,
+
+                        "speed": 40,
+
+                        "size_min": 0.1,
+
+                        "sync": false
+
+                    }
+
+                },
+
+                "line_linked": {
+
+                    "enable": true,
+
+                    "distance": 150,
+
+                    "color": "#287eba",
+
+                    "opacity": 0.4,
+
+                    "width": 1
+
+                },
+
+                "move": {
+
+                    "enable": true,
+
+                    "speed": 1,
+
+                    "direction": "none",
+
+                    "random": false,
+
+                    "straight": false,
+
+                    "out_mode": "out",
+
+                    "bounce": false,
+
+                    "attract": {
+
+                        "enable": false,
+
+                        "rotateX": 600,
+
+                        "rotateY": 1200
+
+                    }
+
+                }
+
+            },
+
+            "interactivity": {
+
+                "detect_on": "canvas",
+
+                "events": {
+
+                    "onhover": {
+
+                        "enable": false,
+
+                        "mode": "repulse"
+
+                    },
+
+                    "onclick": {
+
+                        "enable": false,
+
+                        "mode": "push"
+
+                    },
+
+                    "resize": true
+
+                }
+
+            },
+
+            "retina_detect": true
+
+        });
+
+    </script>
+    <script src="snow.js"></script>
+</body>
+
+</html>
